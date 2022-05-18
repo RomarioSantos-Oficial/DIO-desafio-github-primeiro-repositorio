@@ -2,3 +2,71 @@ git status
 git add .
 git commit -m
 git push origin main
+
+git commit -m"contaúdo da mensagem de commit": Gravação de arquivo no git. Esse comando serve para confirmar os arquivos no git.
+O "-m" é referente ao termo "mensseger". Ou seja, a mensagem que será aprendida não se comprometerá.
+
+ctrl + l = É o comando que limpa a tela do terminal do git.
+
+git log: Comando para visualizar os logs dos arquivos gravados no poder.
+
+git remote origin + endereço da pasta no github permite indicação para o funcionamento: no github.
+Ou seja, o usuário cria uma página no github e pode direcionar uma página do seu computador local para a pasta do github sem
+precisa clonar o direito.
+
+git clone + endereço da pasta no github: Esse comando serve para clonar um projeto no github.
+
+gitignore: Arquivo para ser criado no git e evitar que determinados arquivos sejam adicionais.
+Ou seja, o git vai ignorar os arquivos que estuverem dentro dele.
+
+Exemplo: touch .gitignore (Criar arquivo dentro da pasta desterminada)
+echo "nome do arquivo que vc quer ignorar" >> .gitignore (Escreve dentro do arquivo do gitignore o nome do arquivo que
+você quer ignorar.).
+
+git add .gitignore: Adicionando o gitignore detro do githubIgnorando todos os arquivos de uma extensão:
+echo "*.log" >> .gitignore
+
+Ignorando um inteiro:
+echo "pastaignorada/" >> .gitignore
+
+git commit -am"Rastreando/adicionando e confirmando ao mesmo tempo um arquivo."
+
+git log -n 3: Comando mostra os três últimos commits.
+
+git log --oneline: Resumo dos commits feitos no projeto.
+
+gi: Mostra o resumo dos arquivos alterados com o número de alterações e alterações de log --state.
+
+git r nomedoarquivo: Esse comando serve para removedor de comando/deletar um arquivo do governorm. Todo arquivo removido precisa ser
+commitado - Não esquecer disso.
+
+git mv nomeantigo nome_novo: O comando "mv" altera o nome de um arquivo. Ou seja, renomeia o arquivo existente, exemplo:
+
+  git mv algo01.py01.py
+
+git checkout -- nomedoarquivo Esse comando permite desfazer uma alteração em um arquivo determinado, exemplo:
+
+  echo "Mudança no arquivo!" >> arquivo.txt -> Efeito mudança no arquivo.
+
+git checkout -- arquivo.txt: Cancelando a última alteração do arquivo. Lembrando, as mudanças só podem ser refeitas
+se for fora do palco. Ou seja, antes de adicionar o arquivo com o comando -> git add nomedoarquivo.
+
+git reset --hard: Comando para desfazer todas as que você fez.
+
+git branch novo_branch: Comando para criar um novo branch.
+
+git branch: Comando para listar como branches existentes.
+
+git checkout novo_branch: Comando para mudar de branch.
+
+git checkout -b nova_branch: Comando cria uma nova branch e troca para ela ao mesmo tempo.
+
+git branch -d nova_branch: Comando deleta um branch criado.
+
+OBS: Uma branch só pode ser deletada se o usuário não estiver nela. Ou seja, o desenvolvedor deve mudar de branch com o comando "git checkout master" (por exemplo) e deletar a branch que deseja.
+
+git branch -D nova_branch: O comando usando "-D" (letra) é usado quando existe commit na branch.
+
+git branch --no-merged: Comando para identificar se existe alguma branch não mesclada.
+
+git merge nova_branch -m"Mensagem sobre a mesclagem da branch.": Esse comando a mescla nova_branch ao master.
